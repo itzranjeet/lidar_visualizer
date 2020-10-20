@@ -1,0 +1,8 @@
+<launch>
+    <arg name="rvizConf" default="$(find lidar_visualizer)/rviz/conf.rviz" />
+    <node name="node_lidar_visualizer" pkg="lidar_visualizer" type="Node" output="screen" />
+    <node name="nodeRviz" pkg="rviz" type="rviz" args="-d $(arg rvizConf)" />
+</launch>
+
+<!-- roslaunch lidar_visualizer start.launch -->
+
